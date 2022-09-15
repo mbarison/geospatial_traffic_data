@@ -6,7 +6,7 @@ library(sp)
 library(geoR)
 library(dplyr)
 
-csv2geodata <- function(csv_file_path, city_name) {
+csv2spdf <- function(csv_file_path, city_name) {
 
     # read CSV file, select city
     csv_raw <- filter(read.csv(csv_file_path), traffic_city==city_name)
