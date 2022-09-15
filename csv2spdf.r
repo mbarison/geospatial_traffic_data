@@ -3,7 +3,6 @@
 # Purpose: import CSV with Traffic Flow data and convert to SpatialPointsDataFrame
 
 library(sp)
-library(geoR)
 library(dplyr)
 
 csv2spdf <- function(csv_file_path, city_name) {
